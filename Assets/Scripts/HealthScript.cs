@@ -10,10 +10,12 @@ public class HealthScript : MonoBehaviour
     [SerializeField] bool applyCameraShake;
 
     CameraShake cameraShake;
+    AudioPlayer audioPlayer;
 
     void Awake() 
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
+        audioPlayer = FindObjectOfType<AudioPlayer>();
     }
 
     void OnTriggerEnter2D(Collider2D other) 
@@ -26,6 +28,7 @@ public class HealthScript : MonoBehaviour
             PlayHitEffect();
             ShakeCamera();
             damageDealer.Hit();
+            audioPlayer.PlayDamageClip();
             
             if (health == 0)
             {
