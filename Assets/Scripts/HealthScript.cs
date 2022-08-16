@@ -6,7 +6,7 @@ using UnityEngine;
 public class HealthScript : MonoBehaviour
 {
     [SerializeField] bool isPlayer;
-    [SerializeField] int scoreIncrement = 0;
+    [SerializeField] public int scoreIncrement = 0;
     [SerializeField] public int health = 50;
     [SerializeField] ParticleSystem hitEffect;
     [SerializeField] bool applyCameraShake;
@@ -63,7 +63,6 @@ public class HealthScript : MonoBehaviour
         if (!isPlayer)
         {
             scoreKeeper.ModifyScore(scoreIncrement);
-            Debug.Log(scoreKeeper.GetScore());
         }
         Destroy(gameObject);
     }
