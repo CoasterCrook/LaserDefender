@@ -361,6 +361,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e8d5a51753da7ac42b427feada86cce8, type: 2}
   - {fileID: 11400000, guid: 91671cb3c88795041b27eef95699912c, type: 2}
   - {fileID: 11400000, guid: 9c2419dc3b73e3f4e92f8ee05d607931, type: 2}
+  - {fileID: 11400000, guid: ae26a9d86a1d8c5499f1a5bf996c222e, type: 2}
+  - {fileID: 11400000, guid: 91671cb3c88795041b27eef95699912c, type: 2}
+  - {fileID: 11400000, guid: 151d0485f2f6a6d4ea03b51fe44b2131, type: 2}
+  - {fileID: 11400000, guid: 85911ef14cfd46c429ef09571a67d67e, type: 2}
+  - {fileID: 11400000, guid: 31db3e607de1e5f4d8b91c657b025e38, type: 2}
+  - {fileID: 11400000, guid: bd199abf114dc754c9cc814071691f2f, type: 2}
   timeBetweenWaves: 0
   playerIsAlive: 1
 --- !u!4 &1181562378
